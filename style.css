@@ -1,0 +1,91 @@
+/*CUERPO DE LA PAGINA*/
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Ajusta el video para cubrir toda la pantalla */
+    z-index: -1;            /* Envía el video detrás del contenido */
+}
+
+/*Menu*/
+ul {
+    background-color: rgba(0, 0, 0, 0.341);
+    position: sticky; /* menu estatico al desplazarse */
+    top: 0;
+    list-style-type: none; /* sin viñetas*/
+    margin: 0px 0px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.001);
+    border-radius: 0px 0px 30px 30px;
+}
+
+
+/* elementos de menu*/
+li{
+    padding: 10px 40px;
+}
+
+.cortes { /* volver horizontal categorias */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+}
+
+
+li a {
+    color: rgb(255, 255, 255);
+    padding: 1px 0px; /* separacion de categorias*/
+    text-decoration: none;
+    display: block;
+    cursor:pointer;
+}
+
+
+li a:hover:not(.action),
+li c:hover:not(.action),
+li d:hover:not(.action),
+li e:hover:not(.action) {
+    opacity: 0.2; /* opacidad al pasar el mouse*/
+}
+
+
+/* INICIO*/
+
+.inicio img{
+    width: 100%;
+  }
+
+.background-video{
+    width: 100%;
+}
+
+.texto1{
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+.texto2{
+    margin: 0;
+    margin-top: -20px;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
